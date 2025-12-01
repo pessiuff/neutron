@@ -11,8 +11,8 @@
 #error Unsupported platform!
 #endif
 
-#include <neutron/core/entry_point.h>
-#include <neutron/core/base_app.h>
+#include "neutron/core/entry_point.h"
+#include "neutron/core/base_app.h"
 
 #include <sokol/sokol_log.h>
 #include <sokol/sokol_app.h>
