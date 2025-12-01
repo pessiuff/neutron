@@ -2,6 +2,6 @@
 
 using namespace neutron;
 
-void* neutron_main() {
+base_app* neutron_main() {
     return new playground::app();
 }

@@ -18,7 +18,6 @@ add_compile_definitions(
 add_subdirectory(deps)
 
 set(neutron_headers
-    include/neutron/core/entry_point.h
     include/neutron/core/base_app.h
 )
 

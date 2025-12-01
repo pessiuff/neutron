@@ -11,7 +11,6 @@
 #error Unsupported platform!
 #endif
 
-#include "neutron/core/entry_point.h"
 #include "neutron/core/base_app.h"
 
 #include <sokol/sokol_log.h>
@@ -48,8 +47,10 @@ static void event_userdata_cb(const sapp_event* event, void* user_data) {
     
 }
 
+extern base_app* neutron_main();
+
 sapp_desc sokol_main(int argc, char** argv) {
-    base_app* app = static_cast<base_app*>(neutron_main());
+    base_app* app = neutron_main();
 
     sapp_desc app_desc = {};
     app_desc.user_data = app;
